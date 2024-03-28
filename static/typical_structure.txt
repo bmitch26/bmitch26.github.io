@@ -1,0 +1,12 @@
+/your_project_directory
+    /app.py
+    /templates
+        /index.html
+        /layout.html
+    /static
+        /css
+            style.css
+        /js
+            script.js
+        /images
+            logo.png

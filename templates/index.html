@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | Brett Mitchell</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="DSMLResume3252024.pdf" target="_blank">Resume</a></li>
+    </ul>
+</nav>
+    <div class="container">
+        <div class="text-container">
+            <h1>Hi, I'm Brett Mitchell!</h1>
+            <p>I am a Computer Science Master's student at Midwestern State University and an aspiring data scientist/machine learning engineer. I was curious to learn some basics about frontend, so I decided to make this novel attempt at a personal website for fun!</p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="Website_Pic.jpg" alt="Brett Mitchell">
+    </div>
+
+    <form action="/post" method="POST">
+        <textarea name="content" required="required"></textarea>
+        <button type="submit">Post Comment</button>
+    </form>
+    <ul>
+        {% for comment in comments %}
+            <li>{{ comment.content }} </li>
+            {% endfor %}
+    </ul>
+
+    <footer>
+        <nav class="bottom-nav">
+            <ul>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox">Email</a></li>
+                <li><a href="https://www.instagram.com/bmitch36/">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/brtm23-dsml/">LinkedIn</a></li>
+                <li><a href="https://github.com/bmitch26">GitHub</a></li>
+                <!--- Add more contact information as needed --->
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>
