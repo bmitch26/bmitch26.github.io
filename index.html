@@ -26,6 +26,16 @@
         <img src="Website_Pic.jpg" alt="Brett Mitchell">
     </div>
 
+    <form action="/post" method="POST">
+        <textarea name="content" required="required"></textarea>
+        <button type="submit">Post Comment</button>
+    </form>
+    <ul>
+        {% for comment in comments %}
+            <li>{{ comment.content }} </li>
+            {% endfor %}
+    </ul>
+
     <footer>
         <nav class="bottom-nav">
             <ul>
@@ -38,5 +48,5 @@
         </nav>
     </footer>
     
-    </body>
+</body>
 </html>
